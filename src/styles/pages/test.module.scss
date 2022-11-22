@@ -1,0 +1,24 @@
+.button {
+  font-family: Montserrat, serif;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+}
+
+.text {
+  font-size: 2rem;
+  font-family: "Concert One", serif;
+
+  &.success {
+    color: rgb(16 220 16);
+    visibility: visible;
+  }
+
+  &.hidden {
+    visibility: hidden;
+  }
+}
+
+.advice {
+  margin: 3rem 0 0;
+  font-size: 1.5rem;
+}

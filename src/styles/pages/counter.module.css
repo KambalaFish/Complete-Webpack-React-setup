@@ -1,0 +1,27 @@
+.counter {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  min-width: 8ch;
+  text-align: center;
+  font-weight: 800;
+  background-image:
+    linear-gradient(
+      135deg,
+      hsl(23deg 92% 39%) 0%,
+      hsl(25deg 93% 39%) 25%,
+      hsl(28deg 93% 40%) 33%,
+      hsl(30deg 94% 40%) 38%,
+      hsl(33deg 95% 40%) 42%,
+      hsl(35deg 96% 41%) 46%,
+      hsl(37deg 96% 41%) 50%,
+      hsl(40deg 97% 41%) 53%,
+      hsl(42deg 98% 42%) 58%,
+      hsl(44deg 98% 42%) 63%,
+      hsl(47deg 99% 42%) 72%,
+      hsl(49deg 100% 43%) 99%
+    );
+  color: rgb(255 255 255);
+  padding: 0.25rem 1rem;
+  margin: 1rem 0 0;
+  border-radius: 25% / 50%;
+}

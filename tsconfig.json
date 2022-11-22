@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "strict": true,
+    "allowUnreachableCode": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "module": "es2022",
+    "moduleResolution": "node",
+    "target": "es2022",
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop" : true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@styles/*": ["src/styles/*"]
+    }
+  },
+  "include": ["./src/**/*", "./custom.d.ts"]
+}

@@ -1,0 +1,17 @@
+@use "@styles/abstracts/keyframes" as k;
+@include k.rotation;
+
+.rotator {
+  animation: 30s linear 0s infinite rotation;
+  margin: 0 0 2rem;
+  cursor: pointer;
+}
+
+.title {
+  transition: transform 0.6s linear;
+}
+
+.rotator:hover ~ .title {
+  transform: scale(1.2);
+  transition: transform 0.4s linear;
+}

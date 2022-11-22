@@ -1,0 +1,24 @@
+@use "@styles/abstracts/variables" as v;
+
+@mixin rectangle($width: 100%, $height: 100%, $radius: 0) {
+  width: $width;
+  height: $height;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+@mixin media($breakpoint) {
+  @each $bpName, $size in v.$breakpoints {
+    @if $breakpoint == $bpName {
+      @media (min-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin googleFont($family) {
+  @import url("https://fonts.googleapis.com/css2?family=#{$family}&display=swap");
+}

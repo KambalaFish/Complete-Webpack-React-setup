@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Acme;
+  font-weight: 400;
+  font-style: normal;
+  src: url("@fonts/Acme/Acme-Regular.ttf") format("truetype");
+}
+
+.someClass {
+  color: blue;
+  font-family: Acme;
+}

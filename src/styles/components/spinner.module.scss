@@ -1,0 +1,14 @@
+@use "@styles/abstracts/keyframes" as k;
+@include k.spinnerAnimation;
+
+.spinner {
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  border-radius: 50%;
+  border: k.$borderTransparent;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  animation: 1s linear spinnerAnimation infinite;
+}

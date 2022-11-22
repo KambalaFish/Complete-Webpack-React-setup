@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@function pow($base, $exponent) {
+  $result: 1;
+
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+
+  @return $result;
+}
+
+@function stripUnit($value) {
+  @if type-of($value) == "number" and not unitless($value) {
+    @return math.div($value, ($value * 0 + 1));
+  }
+
+  @return $value;
+}
+
+@function pxToRem($value) {
+  @if math.unit($value) == "px" {
+    @return #{math.div(stripUnit($value), 16)}rem;
+  }
+
+  @return $value;
+}

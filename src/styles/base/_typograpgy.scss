@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:--heading {
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  font-weight: 400;
+  background-image:
+    linear-gradient(
+      60deg,
+      hsl(240deg 100% 41%) 0%,
+      hsl(303deg 100% 44%) 19%,
+      hsl(7deg 100% 48%) 27%,
+      hsl(66deg 100% 50%) 34%,
+      hsl(109deg 100% 51%) 41%,
+      hsl(151deg 100% 51%) 47%,
+      hsl(166deg 100% 52%) 53%,
+      hsl(152deg 100% 51%) 59%,
+      hsl(138deg 100% 51%) 66%,
+      hsl(180deg 100% 53%) 73%,
+      hsl(241deg 100% 55%) 81%,
+      hsl(302deg 100% 56%) 100%
+    );
+  background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,55 @@
+@mixin rotation {
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+$borderSolid: 1rem solid rgb(220 220 220);
+$borderTransparent: 1rem solid transparent;
+
+@mixin spinnerAnimation {
+  @keyframes spinnerAnimation {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+      border: $borderTransparent;
+    }
+
+    25% {
+      transform: translateX(-50%) rotate(90deg);
+      border-right: $borderSolid;
+      border-left: $borderTransparent;
+      border-bottom: $borderTransparent;
+      border-top: $borderTransparent;
+    }
+
+    50% {
+      transform: translateX(-50%) rotate(180deg);
+      border-right: $borderSolid;
+      border-bottom: $borderSolid;
+      border-left: $borderTransparent;
+      border-top: $borderTransparent;
+    }
+
+    75% {
+      transform: translateX(-50%) rotate(270deg);
+      border-right: $borderSolid;
+      border-bottom: $borderSolid;
+      border-left: $borderSolid;
+      border-top: $borderTransparent;
+    }
+
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+      border-right: $borderSolid;
+      border-bottom: $borderSolid;
+      border-left: $borderSolid;
+      border-top: $borderSolid;
+    }
+  }
+}

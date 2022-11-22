@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: calc(0.3125vw + 10px);
+  font-family:
+    Roboto,
+    "Concert One",
+    -apple-system,
+    sans-serif;
+  transition: all 0.25s ease-in-out;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
+}
